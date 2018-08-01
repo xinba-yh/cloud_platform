@@ -1,7 +1,6 @@
-package com.qianli.ilink.cloud_platform.commons.dao;
+package com.qianli.ilink.cloud_platform.messagecenter.dao;
 
 import org.apache.ibatis.annotations.Select;
-
 
 public interface TestMapper {
 
