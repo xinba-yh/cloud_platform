@@ -39,7 +39,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Throwable.class)
     public Object MethodArgumentNotValidHandler(HttpServletRequest request,
                                                 Throwable exception) {
-       log.error("unknown error , from url : {} , exception : {}",request.getRequestURL().toString(),exception);
+        log.error("unknown error , from url : {} , exception : {}",request.getRequestURL().toString(),exception);
 
         return ResponseEntityUtils.build(ResultEnum.UNKNOWN_ERROR);
     }

@@ -1,4 +1,4 @@
-package com.qianli.ilink.cloud_platform.commons.core.util;
+package com.qianli.ilink.cloud_platform.commons.core.utils;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;

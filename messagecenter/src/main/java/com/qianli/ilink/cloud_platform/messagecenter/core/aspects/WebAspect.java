@@ -1,7 +1,6 @@
 package com.qianli.ilink.cloud_platform.messagecenter.core.aspects;
 
 
-import com.qianli.ilink.cloud_platform.commons.core.eneity.ResponseEntity;
 import com.qianli.ilink.cloud_platform.commons.core.enums.ResultEnum;
 import com.qianli.ilink.cloud_platform.commons.core.utils.ResponseEntityUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -52,7 +51,7 @@ public class WebAspect {
                 log.warn("warning request url time out , url : {} , time consum : {}",url,timeConsumMillis);
         } catch (Throwable throwable) {
             log.error("url fail , url : {} , method : {} , exception : {}",url,methodName,throwable);
-            result = ResponseEntityUtils.build(ResultEnum.UNKNOWN_ERROR);
+            result = ResponseEntityUtils.build(ResultEnum.SYSTEM_ERROR,throwable);
         }
 
         return result;

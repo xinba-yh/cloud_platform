@@ -1,7 +1,7 @@
 package com.qianli.ilink.cloud_platform.messagecenter.core.config;
 
 
-import com.qianli.ilink.cloud_platform.commons.core.util.SwaggerUtils;
+import com.qianli.ilink.cloud_platform.commons.core.utils.SwaggerUtils;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.spring.web.plugins.Docket;
