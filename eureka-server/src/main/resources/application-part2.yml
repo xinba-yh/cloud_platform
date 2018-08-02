@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cloud_platform-eureka-server
+server:
+  port: 8001
+eureka:
+  client:
+      service-url:
+          defaultZone: http://peer1:8000/eureka/
+  instance:
+    hostname: peer2
