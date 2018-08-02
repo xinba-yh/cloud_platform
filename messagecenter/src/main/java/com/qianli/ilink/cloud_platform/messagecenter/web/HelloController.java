@@ -2,6 +2,7 @@ package com.qianli.ilink.cloud_platform.messagecenter.web;
 
 
 import com.qianli.ilink.cloud_platform.commons.core.eneity.ResponseEntity;
+import com.qianli.ilink.cloud_platform.commons.core.utils.ResponseEntityUtils;
 import com.qianli.ilink.cloud_platform.messagecenter.core.entity.UserEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiParam;
@@ -24,7 +25,7 @@ public class HelloController {
 
     @PostMapping("hello2")
     public ResponseEntity hello2(@Valid @RequestBody @ApiParam() UserEntity user){
-        return new ResponseEntity();
+        return ResponseEntityUtils.builderSuccess(user);
     }
 
 }
